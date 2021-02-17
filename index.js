@@ -17,21 +17,21 @@ function destructivelyRemoveFirstCat() {
 }
 
 function appendCat(name) {
-    let moreCats = [...cats, name]
+    const moreCats = [...cats, name]
     return moreCats
 }
 
 function prependCat(name) {
-    let moreCats = [name, ...cats]
+    const moreCats = [name, ...cats]
     return moreCats
 }
 
 function removeLastCat() {
-    let lessCats = cats.slice(0, cats.length -1)
+    const lessCats = cats.slice(0, cats.length -1)
     return lessCats
 }
 
 function removeFirstCat() {
-    let lessCats = cats.slice(1)
+    const lessCats = cats.slice(1)
     return lessCats
 }
